@@ -57,6 +57,11 @@ class App {
 
     // Adicione mais 3 casos de teste,
     // um deles para o caso especial de largura negativa:
+    System.out.println(Texto.pad("Forca:", 10, '_')); // Forca:____
+    System.out.println(Texto.pad("Forca:", 10, '_').equals("Forca:____")); // true
+    // caso especial: length da string maior que a largura deixa inalterada
+    System.out.println(Texto.pad("Forca:", -3, '.').equals("Forca:")); // true
+
 
 
   }
